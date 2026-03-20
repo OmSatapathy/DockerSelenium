@@ -13,16 +13,20 @@ public class SingletonDesign {
 
 	}
 
-	public WebDriver getInstance(WebDriver driver) {
+	public static WebDriver getInstance() {
 		if (driver == null) {
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			synchronized (SingletonDesign.class) {
+				if (driver == null) {
+					WebDriverManager.chromedriver().setup();
+					driver = new ChromeDriver();
+				}
+			}
 
 		}
 		return driver;
 	}
 
-	public void runner() {
+	public static void runner() {
 		driver.get("https://www.facebook.com/omprakash.satapathy.1");
 		System.out.println(driver.getTitle());
 	}
