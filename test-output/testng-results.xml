@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-21T00:10:36 IST" name="Default suite" finished-at="2026-03-21T00:10:39 IST" duration-ms="3454">
+  <suite started-at="2026-03-21T00:17:51 IST" name="Default suite" finished-at="2026-03-21T00:17:56 IST" duration-ms="4644">
     <groups>
     </groups>
-    <test started-at="2026-03-21T00:10:36 IST" name="Default test" finished-at="2026-03-21T00:10:39 IST" duration-ms="3454">
+    <test started-at="2026-03-21T00:17:51 IST" name="Default test" finished-at="2026-03-21T00:17:56 IST" duration-ms="4644">
       <class name="web.SingletonTest">
-        <test-method signature="setUp()[pri:0, instance:web.SingletonTest@4e50c791]" started-at="2026-03-21T00:10:36 IST" name="setUp" finished-at="2026-03-21T00:10:39 IST" duration-ms="3384" status="PASS">
+        <test-method signature="setUp()[pri:0, instance:web.SingletonTest@4e50c791]" started-at="2026-03-21T00:17:51 IST" name="setUp" finished-at="2026-03-21T00:17:56 IST" duration-ms="4561" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
