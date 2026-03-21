@@ -27,6 +27,7 @@ public class SingletonTest {
 			t3.join();
 		} catch (Exception e) {
 			e.printStackTrace();
+			
 		}
 	}
 
