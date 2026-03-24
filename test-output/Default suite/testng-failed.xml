@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="web.DatadrivenTest">
+      <class name="restassured.Schemavalidation">
         <methods>
-          <include name="setup"/>
-          <include name="doLogin" invocation-numbers="0 1 2"/>
+          <include name="verifyScehema"/>
         </methods>
-      </class> <!-- web.DatadrivenTest -->
+      </class> <!-- restassured.Schemavalidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
