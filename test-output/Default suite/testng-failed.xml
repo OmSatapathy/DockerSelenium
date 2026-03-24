@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="restassured.Schemavalidation">
+      <class name="datadriven.ExcelReader">
         <methods>
-          <include name="verifyScehema"/>
+          <include name="readExcelfile"/>
         </methods>
-      </class> <!-- restassured.Schemavalidation -->
+      </class> <!-- datadriven.ExcelReader -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

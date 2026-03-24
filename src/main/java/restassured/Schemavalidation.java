@@ -2,8 +2,6 @@ package restassured;
 
 import org.testng.annotations.Test;
 
-import com.github.fge.jsonschema.main.JsonValidator;
-
 import io.restassured.RestAssured;
 import io.restassured.module.jsv.JsonSchemaValidator;
 
