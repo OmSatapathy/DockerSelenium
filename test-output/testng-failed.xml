@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="datadriven.ExcelReader">
+      <class name="web.DropdownHandle">
         <methods>
-          <include name="readExcelfile"/>
+          <include name="verifyDropdown"/>
         </methods>
-      </class> <!-- datadriven.ExcelReader -->
+      </class> <!-- web.DropdownHandle -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

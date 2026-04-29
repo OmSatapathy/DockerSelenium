@@ -10,6 +10,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -25,8 +26,10 @@ public class AlertWindowhandle {
 
 	@BeforeMethod
 	public void setup() { // Runs before each test method
+		ChromeOptions opt = new ChromeOptions();
+		opt.setAcceptInsecureCerts(true);
 		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
+		driver = new ChromeDriver(opt);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://demo.automationtesting.in/Register.html");
 	}
@@ -108,5 +111,7 @@ public class AlertWindowhandle {
 		wait.until(ExpectedConditions.alertIsPresent());
 		
 		driver.quit();
+		
+		
 	}
 }
